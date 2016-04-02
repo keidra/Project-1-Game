@@ -5,19 +5,21 @@ function random_character(chars) {
     return this.chars.substr( Math.floor(Math.random() * 100), 1);
 }
 
-
 var rchar = random_character();
-this.chars = this.chars.replace(rchar.toString(), "");
+// this.chars = chars.split(rchar.length).join('');
+// alert(rchar.split('?')[0]);
 
 console.log(rchar);
 console.log(chars.length);
 
 function play() {
-       for (i = 0; i > 100; i++) {
-        this.innerHTML = rchar;
+      for (i = 0; i < chars.length; i++) {  
+      this.innerHTML = rchar;
       rchar =  random_character(); 
-       } console.log("Game over!")
-       console.log(chars.length);
+       } 
+ alert(rchar.split('?')[0]);
+       // console.log("Game over!")
+       // console.log(chars.length);
 
 
 }
