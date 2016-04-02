@@ -1,0 +1,85 @@
+/*  Element Styling   */
+
+
+body {
+  font-family: Helvetica;
+  background-color: black;
+
+}
+
+
+h1 {
+  text-align: center;
+  border: 0;
+  padding-bottom: 10px;
+  color: white;
+}
+
+/* Board Styling */
+
+#board {
+  width: 355px;
+  height: 355px;
+  border-spacing: 0px;
+  margin-left: -2px;
+  margin-top: -2px;
+  margin-bottom: 15px;
+}
+
+
+td {
+    height: 100px;
+    width: 100px;
+    background-color: tan;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: aqua;
+
+}
+
+tr {
+  border-bottom: 0;
+
+}
+
+#board tr:last-child td{
+    border-bottom: none;
+}
+
+
+/* Button & Dropdown Styling */
+
+.button {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+
+}
+
+#restart {
+  font-size: 12pt;
+  color: white;
+  background-color: lightslategrey;
+  padding: 5px 15px 5px 15px;
+
+}
+
+label {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: white;
+
+}
+
+select {
+  margin: 10px 10px 10px 5px;
+
+}
+
+
+
