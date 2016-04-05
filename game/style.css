@@ -41,6 +41,9 @@ td {
     font-size: 40px;
     text-transform: uppercase;
     color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+
 
 }
 
