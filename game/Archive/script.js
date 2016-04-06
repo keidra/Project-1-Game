@@ -22,7 +22,6 @@ var wordbank = ['website', 'virtual', 'version', 'utility', 'toolbar', 'storage'
 'integer', 'exabyte', 'encrypt', 'dynamic', 'digital', 'desktop', 'compile', 'command', 'captcha', 'browser'];
 var rndNum = getRandomInt(0, wordbank.length - 1);
 var word = wordbank[rndNum];
-var currentWord = word;
 
 
 function play() {
@@ -35,8 +34,6 @@ function play() {
       document.getElementById("5").innerHTML = rstring.charAt(4);
       document.getElementById("6").innerHTML = rstring.charAt(5);
       document.getElementById("7").innerHTML = rstring.charAt(6);
-
-
 }
 
 var squares = document.getElementById("board").getElementsByTagName("td");
@@ -54,7 +51,9 @@ document.getElementById("restart").onclick = function() {
 }
 
 
-      $(document).on('click', function(event) {
+
+
+$(document).on('click', function(event) {
     $( '#board tr' ).sortable({
       placeholder: '#board tr',
       stop: checkOrder
@@ -62,64 +61,10 @@ document.getElementById("restart").onclick = function() {
     $( '#board tr' ).disableSelection();
 });
 
-function checkOrder() {
- for (var i = 1; i <= 7; i++) {
-  console.log(document.getElementById(i).innerHTML);
- }
-
-
-
+function checkOrder(event, ui) {
+  if (rstring == wordbank[rndNum]);
+  
 }
-
-
-
-// function checkOrder(){
-
-//  if(document.getElementById("1").innerHTML == 'ui-sortable-handle' ){
-//         alert("Correct!");
-//         // // var p = parseInt(document.querySelectorAll('td'));
-//         // // // document.getElementById("playerOneScore").textContent = p;
-//         // p++;
-       
-//     }
-
-
-
-
-
-
-
-
-// }
-
-
-
-
-
-
-
-// function checkOrder(event, ui) {
-// var squares = document.getElementById("").getElementsByTagName("td");
-//   for (var i in squares) {
-//     squares[i].innerHTML = ''
-//   }
-//   rndNum = getRandomInt(0, wordbank.length - 1);
-//   word = wordbank[rndNum];
-
-
-
-
-
-
-
-//   for ( var rstring = 0; rstring <= wordbank[rndNum].length; rstring++) {
-//     console.log("Correct!")
-//   }
-
-// }
-
-
-
 
 // $(document).each(function(event) { 
 //   if (rstring == wordbank[rndNum]);
