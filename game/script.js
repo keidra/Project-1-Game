@@ -54,6 +54,15 @@ document.getElementById("restart").onclick = function() {
 
 }
 
+document.getElementById("rules").onclick = function() {
+  swal(' Try to guess the scrambled word. Click on any tile to shuffle the letters. Good luck!');
+}
+
+document.getElementById("hint").onclick = function() {
+  swal("The first letter is " + word[0] + ".");
+}
+
+
 $( '#board tr' ).sortable({
   placeholder: '#board tr',
   update: function checkOrder(event, ui) {
@@ -68,19 +77,45 @@ $( '#board tr' ).sortable({
 
 
     if(tempWord === word) {
-      swal("Good job!", "You guessed the correct word!", "success")
-    }
+      swal("Good job!", "You guessed the correct word!", "success");
 
+    
+
+
+
+    if (tempWord === word) {
+      $('ul').append('<li>' + word + '</li>');
+  
+}
 
   }
-});
+
+    }
+    // var score = parseInt(document.getElementById("score"));
+    // if (score == tempWord) {
+    //   console.log(score); 
+    // }
+
+})
 
 
-$(document).on('click', function(event) {
+
+
+
+// var score = parseInt(document.getElementById("score").innerHTML);
+
+//     function scoreIncrement() {
+//     score++;
+//     document.getElementById('score').innerHTML = score;
+//     console.log(score);
+
+// }
+
+// $(document).on('click', function(event) {
     
-  
 
-});
+
+// });
 
 
 
