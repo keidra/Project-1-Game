@@ -60,12 +60,12 @@ tr {
     text-align: center;
 }
 
-#restart {
+#next {
     font-size: 20pt;
     color: #000;
     background-color: gray;
     padding: 5px 15px;
-    margin-left: 450px;
+    margin-left: 730px;
     position: absolute;
     margin-top: 100px;
     font-family: 'Amatic SC';
@@ -77,7 +77,7 @@ tr {
     color: #000;
     background-color: gray;
     padding: 5px 15px;
-    margin-left: 730px;
+    margin-left: 450px;
     position: absolute;
     margin-top: 100px;
     font-family: 'Amatic SC';
@@ -98,6 +98,7 @@ tr {
 
 body > div.buttons {
     margin-top: -160px;
+    margin-left: -12px;
 }
 
 /* Word List & Scoreboard */

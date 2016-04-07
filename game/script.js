@@ -40,7 +40,7 @@ var squares = document.getElementById("board").getElementsByTagName("td");
 for (var i in squares) {
     squares[i].onclick = play;
 }
-document.getElementById("restart").onclick = function() {
+document.getElementById("next").onclick = function() {
     for (var i in squares) {
         squares[i].innerHTML = '';
     }
@@ -55,6 +55,9 @@ document.getElementById("rules").onclick = function() {
 document.getElementById("hint").onclick = function() {
     swal("The first letter is " + word[0] + ".");
 }
+
+
+
 $('#board tr').sortable({
     placeholder: '#board tr',
     update: function checkOrder(event, ui) {
@@ -65,7 +68,7 @@ $('#board tr').sortable({
             tempWord += letter;
         }
         if (tempWord === word) {
-            swal("Good job!", "You guessed the correct word!",
+            swal("Correct!", "You guessed the word!",
                 "success");
             $('ul').append('<li>' + word + '</li>');
             score++
