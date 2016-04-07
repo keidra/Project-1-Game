@@ -79,23 +79,29 @@ $( '#board tr' ).sortable({
     if(tempWord === word) {
       swal("Good job!", "You guessed the correct word!", "success");
 
-    
-
-
 
     if (tempWord === word) {
       $('ul').append('<li>' + word + '</li>');
-  
+
 }
 
+  
   }
 
-    }
-    // var score = parseInt(document.getElementById("score"));
-    // if (score == tempWord) {
-    //   console.log(score); 
-    // }
+  function outputScore(){
 
+  if (tempWord === word) {
+      var p = parseInt($('score').innerHTML);
+      p++;
+      document.getElementById("playerOneScore").innerHTML = p;
+
+    }
+ 
+
+}
+
+   
+    
 })
 
 
