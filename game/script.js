@@ -27,16 +27,14 @@ var currentWord = word;
 
 function play() {
   console.log(word);
-      var rstring = word.shuffle();
-      document.getElementById("1").innerHTML = rstring.charAt(0);
-      document.getElementById("2").innerHTML = rstring.charAt(1);
-      document.getElementById("3").innerHTML = rstring.charAt(2);
-      document.getElementById("4").innerHTML = rstring.charAt(3);
-      document.getElementById("5").innerHTML = rstring.charAt(4);
-      document.getElementById("6").innerHTML = rstring.charAt(5);
-      document.getElementById("7").innerHTML = rstring.charAt(6);
-
-
+  var rstring = word.shuffle();
+  document.getElementById("1").innerHTML = rstring.charAt(0);
+  document.getElementById("2").innerHTML = rstring.charAt(1);
+  document.getElementById("3").innerHTML = rstring.charAt(2);
+  document.getElementById("4").innerHTML = rstring.charAt(3);
+  document.getElementById("5").innerHTML = rstring.charAt(4);
+  document.getElementById("6").innerHTML = rstring.charAt(5);
+  document.getElementById("7").innerHTML = rstring.charAt(6);
 }
 
 var squares = document.getElementById("board").getElementsByTagName("td");
@@ -53,101 +51,35 @@ document.getElementById("restart").onclick = function() {
 
 }
 
+$( '#board tr' ).sortable({
+  placeholder: '#board tr',
+  update: function checkOrder(event, ui) {
 
-      $(document).on('click', function(event) {
-    $( '#board tr' ).sortable({
-      placeholder: '#board tr',
-      stop: checkOrder
-    });
-    $( '#board tr' ).disableSelection();
+
+    var tiles = $('td');
+    var tempWord = '';
+    for (var i = 0; i < tiles.length; i++) {
+      var letter = $(tiles[i]).text();
+      tempWord += letter;
+    }
+
+
+
+    if(tempWord === word) {
+      alert('CORRECT!')
+    }
+
+
+  }
 });
 
-function checkOrder() {
- for (var i = 1; i <= 7; i++) {
-  console.log(document.getElementById(i).innerHTML);
- }
 
+$(document).on('click', function(event) {
+    
+  
 
+});
 
-}
-
-
-
-// function checkOrder(){
-
-//  if(document.getElementById("1").innerHTML == 'ui-sortable-handle' ){
-//         alert("Correct!");
-//         // // var p = parseInt(document.querySelectorAll('td'));
-//         // // // document.getElementById("playerOneScore").textContent = p;
-//         // p++;
-       
-//     }
-
-
-
-
-
-
-
-
-// }
-
-
-
-
-
-
-
-// function checkOrder(event, ui) {
-// var squares = document.getElementById("").getElementsByTagName("td");
-//   for (var i in squares) {
-//     squares[i].innerHTML = ''
-//   }
-//   rndNum = getRandomInt(0, wordbank.length - 1);
-//   word = wordbank[rndNum];
-
-
-
-
-
-
-
-//   for ( var rstring = 0; rstring <= wordbank[rndNum].length; rstring++) {
-//     console.log("Correct!")
-//   }
-
-// }
-
-
-
-
-// $(document).each(function(event) { 
-//   if (rstring == wordbank[rndNum]);
-//     alert("You win!"); 
-// })
-
-
-// var total =$(this).find('word');
-// if(total.length === total.filter(wordbank).length){
-//     alert('correct');
-// }
-
-// $("#board").sortable({
-//     items: "> tr:not(:first)",
-//     appendTo: "parent",
-//     helper: "clone"
-// }).disableSelection();
-
-// $("#board tr td").droppable({
-//     hoverClass: "drophover",
-//     tolerance: "pointer",
-//     drop: function (e, ui) {
-//         var tabdiv = $(this).attr("href");
-//         $(tabdiv + " table").append(ui.draggable.clone(true).show());
-//         ui.draggable.remove();
-//     }
-// });
- 
 
 
 
