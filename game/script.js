@@ -1,3 +1,6 @@
+
+
+
 String.prototype.shuffle = function () {
     
     var a = this.split(""),
@@ -64,9 +67,8 @@ $( '#board tr' ).sortable({
     }
 
 
-
     if(tempWord === word) {
-      alert('CORRECT!')
+      swal("Good job!", "You guessed the correct word!", "success")
     }
 
 
