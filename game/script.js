@@ -55,7 +55,6 @@ document.getElementById("rules").onclick = function() {
 document.getElementById("hint").onclick = function() {
     swal("The first letter is " + word[0] + ".");
 }
-$(function () {
 $('#board tr').sortable({
     placeholder: '#board tr',
     update: function checkOrder(event, ui) {
@@ -75,7 +74,7 @@ $('#board tr').sortable({
         }
     });
 
-});
+
 
 
 
