@@ -58,23 +58,17 @@ document.getElementById("hint").onclick = function() {
 $('#board tr').sortable({
     placeholder: '#board tr',
     update: function checkOrder(event, ui) {
-            var tiles = $('td');
-            var tempWord = '';
-            for (var i = 0; i < tiles.length; i++) {
-                var letter = $(tiles[i]).text();
-                tempWord += letter;
-            }
-            if (tempWord === word) {
-                swal("Correct!", "You guessed the word!",
-                    "success");
-                $('ul').append('<li>' + word + '</li>');
-                score++
-                $('#score').text(score);
-            }
+        var tiles = $('td');
+        var tempWord = '';
+        for (var i = 0; i < tiles.length; i++) {
+            var letter = $(tiles[i]).text();
+            tempWord += letter;
         }
-    });
-
-
-
-
-
+        if (tempWord === word) {
+            swal("Correct!", "You guessed the word!", "success");
+            $('ul').append('<li>' + word + '</li>');
+            score++
+            $('#score').text(score);
+        }
+    }
+});
