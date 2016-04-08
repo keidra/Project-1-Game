@@ -32,11 +32,11 @@ The random word is then scrambled, and then the function play() is run, and the 
 
 A a tile on the page is clicked, .onclick is run, and excutes the shuffle function on each click. Also enabled on this click, is .sortable, which enables the drag & drop capablity for the tiles. 
 
-- .onclick is enabled for the Reset, Hint, and Next Word buttons. 
+A .onclick is enabled for the Reset, Hint, and Next Word buttons. 
 
-- .append is used to output the correctly unscrambled letter, after the player gets it correct. It is then placed into a <li> item inside an <ul>. An alert generates upon the correct answer being reached using swal();.
+A .append is used to output the correctly unscrambled letter, after the player gets it correct. It is then placed into a <li> item inside an <ul>. An alert generates upon the correct answer being reached using swal();.
 
-Score++ is used ot incremented the number of correct words, and is stored with .text(score).
+'Score++' is used to incremented the number of correct words, and is stored with .text(score).
 -----------------------------------------------------------------------------------------------------------------------------
 
 
