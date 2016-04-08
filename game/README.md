@@ -34,7 +34,7 @@ A a tile on the page is clicked, .onclick is run, and excutes the shuffle functi
 
 A .onclick is enabled for the Reset, Hint, and Next Word buttons. 
 
-A .append is used to output the correctly unscrambled letter, after the player gets it correct. It is then placed into a '<li>' item inside an '<ul>'. An alert generates upon the correct answer being reached using swal();.
+A .append is used to output the correctly unscrambled letter, after the player gets it correct. It is then placed into an li item inside an ul. An alert generates upon the correct answer being reached using swal();.
 
 'Score++' is used to incremented the number of correct words, and is stored with .text(score).
 -----------------------------------------------------------------------------------------------------------------------------
