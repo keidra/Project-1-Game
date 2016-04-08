@@ -3,7 +3,7 @@ body {
     font-family: Helvetica;
     background: url(43copy.png);
     background-size: 1300px 850px;
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
     overflow: hidden;
 }
 
@@ -25,7 +25,7 @@ h1 {
     height: 60px;
     border-spacing: 0;
     margin-left: 430px;
-    margin-top: 85px;
+    margin-top: -15px;
     margin-bottom: 15px;
 }
 
@@ -67,7 +67,7 @@ tr {
     padding: 5px 15px;
     margin-left: 730px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
     font-family: 'Amatic SC';
     font-weight: 700;
 }
@@ -79,7 +79,7 @@ tr {
     padding: 5px 15px;
     margin-left: 450px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
     font-family: 'Amatic SC';
     font-weight: 700;
 }
@@ -91,7 +91,7 @@ tr {
     padding: 5px 15px;
     margin-left: 600px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
     font-family: 'Amatic SC';
     font-weight: 700;
 }
@@ -137,7 +137,7 @@ body > div.buttons {
 }
 
 #container-fluid > h2.wordlist {
-    margin-top: -215px;
+    margin-top: -225px;
     margin-left: 95px;
     text-decoration: underline;
 }
@@ -155,4 +155,11 @@ body > div.buttons {
     font-family: 'Amatic SC';
     font-size: 40px;
     font-weight: 700;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    margin-top: 40px
 }

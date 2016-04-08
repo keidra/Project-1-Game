@@ -10,6 +10,13 @@ String.prototype.shuffle = function() {
     return a.join("");
 }
 
+function blinker() {
+    $('.blink_me').fadeOut(500);
+    $('.blink_me').fadeIn(500);
+}
+
+setInterval(blinker, 1000);
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -56,8 +63,6 @@ document.getElementById("hint").onclick = function() {
     swal("The first letter is " + word[0] + ".");
 }
 
-
-
 $('#board tr').sortable({
     placeholder: '#board tr',
     update: function checkOrder(event, ui) {
@@ -76,3 +81,8 @@ $('#board tr').sortable({
         }
     }
 });
+
+
+
+
+
