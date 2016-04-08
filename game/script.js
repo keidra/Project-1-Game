@@ -10,13 +10,6 @@ String.prototype.shuffle = function() {
     return a.join("");
 }
 
-function blinker() {
-    $('.blink_me').fadeOut(500);
-    $('.blink_me').fadeIn(500);
-}
-
-setInterval(blinker, 1000);
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -62,27 +55,27 @@ document.getElementById("rules").onclick = function() {
 document.getElementById("hint").onclick = function() {
     swal("The first letter is " + word[0] + ".");
 }
-
+$(function () {
 $('#board tr').sortable({
     placeholder: '#board tr',
     update: function checkOrder(event, ui) {
-        var tiles = $('td');
-        var tempWord = '';
-        for (var i = 0; i < tiles.length; i++) {
-            var letter = $(tiles[i]).text();
-            tempWord += letter;
+            var tiles = $('td');
+            var tempWord = '';
+            for (var i = 0; i < tiles.length; i++) {
+                var letter = $(tiles[i]).text();
+                tempWord += letter;
+            }
+            if (tempWord === word) {
+                swal("Correct!", "You guessed the word!",
+                    "success");
+                $('ul').append('<li>' + word + '</li>');
+                score++
+                $('#score').text(score);
+            }
         }
-        if (tempWord === word) {
-            swal("Correct!", "You guessed the word!",
-                "success");
-            $('ul').append('<li>' + word + '</li>');
-            score++
-            $('#score').text(score);
-        }
-    }
+    });
+
 });
-
-
 
 
 
