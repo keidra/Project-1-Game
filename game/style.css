@@ -3,7 +3,7 @@ body {
     font-family: Helvetica;
     background: url(43copy.png);
     background-size: 1300px 850px;
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     overflow: hidden;
 }
 
