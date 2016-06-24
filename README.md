@@ -1,5 +1,4 @@
-# Project-1-Game
-General Assembly - Project #1: The Game
+Word Scramble
 
 ![Alt text](Screen2.png?raw=true "Screenshot 2")
 ![Alt text](Screen1.png?raw=true "Screenshot 1")
