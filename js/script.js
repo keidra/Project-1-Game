@@ -26,7 +26,6 @@ var currentWord = word;
 var score = 0;
 
 function play() {
-    // console.log(word);
     var rstring = word.shuffle();
     document.getElementById("1").innerHTML = rstring.charAt(0);
     document.getElementById("2").innerHTML = rstring.charAt(1);
@@ -72,3 +71,10 @@ $('#board tr').sortable({
         }
     }
 });
+
+
+
+
+
+
+
