@@ -17,10 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <script src="js/sweetalert.min.js"></script>
-    
-    
-    
+    <script src="js/sweetalert.min.js"></script>    
 </head>
 
 <body>
@@ -28,10 +25,8 @@
     <div class="title">
         <h1 class="word-title">WORD SCRAMBLE</h1>
 
-        <h4 class="word-title-2">Click any tile to start!</h4> 
+        <h4 class="word-title-2 blinking">Click any tile to start!</h4> 
     </div>
-   
-
 
     <table id="board">
         <tr id="squares">
@@ -60,24 +55,20 @@
 
 
     <div id="container-fluid">
-    
         <h2 class="wordlist">Words Guessed</h2>
-
 
         <h2 class="score">Score</h2>
     </div>
 
 
-    <ul id="list">
-    </ul>
-
-
+    <ul id="list"></ul>
     <p id="score">0</p>
 
 
     <div class="buttons">
-        <button id="rules">RULES</button> <button id="hint">HINT</button>
-        <button id="next">NEXT WORD</button>
+        <button id="rules" class="btn btn-primary btn-lg">RULES</button> 
+        <button id="hint" class="btn btn-primary btn-lg">HINT</button>
+        <button id="next" class="btn btn-primary btn-lg">NEXT WORD</button>
     </div>
 
     <!-- SCRIPTS -->

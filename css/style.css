@@ -27,15 +27,15 @@ body {
 }
 
 td {
-    height: 30px;
-    width: 50px;
-    background-color: #B0DACC;
+  /*  height: 30px;
+    width: 50px;*/
+    background-color: #E7E7E7;
     border-collapse: collapse;
     text-align: center;
     font-size: 1.6em;
     color: #000;
     text-transform: uppercase;
-    border-radius: 7px;
+    border-radius: 30px;
     font-family: 'Sue Ellen Francisco';
    /* font-weight: 200;*/
     /*box-shadow: 5px 5px 5px #666;*/
@@ -57,44 +57,44 @@ td {
 }
 
 #next {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000;
-    background-color: gray;
-    padding: 5px 15px;
+    background-color: #E7DF86;
+    padding: 7px 20px;
     margin-left: 730px;
     position: absolute;
     margin-top: 170px;
-    font-weight: 700;
+    border: none;
     
 }
 
 #rules {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000;
-    background-color: gray;
-    padding: 5px 15px;
+    background-color: #E7DF86;
+    padding: 7px 20px;
     margin-left: 450px;
     position: absolute;
     margin-top: 170px;
-    font-weight: 700;
+    border: none;
     
 }
 
 #hint {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000;
-    background-color: gray;
-    padding: 5px 15px;
+    background-color: #E7DF86;
+    padding: 7px 20px;
     margin-left: 600px;
     position: absolute;
     margin-top: 170px;
-    font-weight: 700;
+    border: none;
 
 }
 
 body > div.buttons {
-    margin-top: -205px;
-    margin-left: -12px;
+    margin-top: -157px;
+    margin-left: -15px;
 }
 
 /* Word List & Scoreboard */
@@ -115,13 +115,15 @@ body > div.buttons {
 
 .score {
     color: #000;
+    font-size: 2.5em;
     
 }
 
-#container-fluid > h2.wordlist {
-    margin-top: -225px;
-    margin-left: 90px;
+.wordlist {
+    margin-top: -260px;
+    margin-left: 70px;
     text-decoration: underline;
+    font-size: 2.5em;
 }
 
 #container-fluid > h2.score {
@@ -167,8 +169,7 @@ body > div.buttons {
     padding-bottom: 10px;
     color: #000;
     margin-left: 430px;
-   
-    font-size: 4.2em;
+    font-size: 4em;
     display: inline;
     margin-top: -105px;
 }
