@@ -1,7 +1,7 @@
 Word Scramble
 
-![Alt text](Screen2.png?raw=true "Screenshot 2")
-![Alt text](Screen1.png?raw=true "Screenshot 1")
+<!-- ![Alt text](Screen2.png?raw=true "Screenshot 2")
+![Alt text](Screen1.png?raw=true "Screenshot 1") -->
 -------------------------------------------------------------------------------------------------------------------
 Word Scramble - Version 1 
 -------------------------------------------------------------------------------------------------------------------
