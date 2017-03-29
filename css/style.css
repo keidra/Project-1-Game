@@ -188,3 +188,17 @@ footer {
     margin-top: 430px;
     font-size: 1.2em;
 }
+
+
+.sweet-alert h2 {
+    color: #000000 !important;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    font-family: 'Sue Ellen Francisco';
+}
