@@ -2,16 +2,18 @@
 
 html { font-size:100%; }
 
-@media (min-width: 640px) { body {font-size:1rem;} } 
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
 @media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
 
 body {
-    font-family: Helvetica;
-    background: url(../img/43copy.png);
-    background-size: 1300px 850px;
-    background-repeat: repeat-y;
-    overflow: hidden;
+    background: url(../img/imac.png);
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Sue Ellen Francisco' !important;
 }
 
 /* Board Styling */
@@ -27,24 +29,25 @@ body {
 td {
     height: 30px;
     width: 50px;
-    background: url(../img/tile.jpg);
+    background-color: #B0DACC;
     border-collapse: collapse;
     text-align: center;
-    font-family: monospace;
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 1.6em;
     color: #000;
+    text-transform: uppercase;
     border-radius: 7px;
-    box-shadow: 5px 5px 5px #666;
+    font-family: 'Sue Ellen Francisco';
+   /* font-weight: 200;*/
+    /*box-shadow: 5px 5px 5px #666;*/
 }
 
-tr {
+/*tr {
     border-bottom: 0;
-}
+}*/
 
-#board tr:last-child td {
+/*#board tr:last-child td {
     border-bottom: none;
-}
+}*/
 
 /* Button Styling */
 .button {
@@ -54,39 +57,39 @@ tr {
 }
 
 #next {
-    font-size: 20pt;
+    font-size: 1.5em;
     color: #000;
     background-color: gray;
     padding: 5px 15px;
     margin-left: 730px;
     position: absolute;
     margin-top: 170px;
-    font-family: 'Amatic SC';
     font-weight: 700;
+    
 }
 
 #rules {
-    font-size: 20pt;
+    font-size: 1.5em;
     color: #000;
     background-color: gray;
     padding: 5px 15px;
     margin-left: 450px;
     position: absolute;
     margin-top: 170px;
-    font-family: 'Amatic SC';
     font-weight: 700;
+    
 }
 
 #hint {
-    font-size: 20pt;
+    font-size: 1.5em;
     color: #000;
     background-color: gray;
     padding: 5px 15px;
     margin-left: 600px;
     position: absolute;
     margin-top: 170px;
-    font-family: 'Amatic SC';
     font-weight: 700;
+
 }
 
 body > div.buttons {
@@ -95,10 +98,10 @@ body > div.buttons {
 }
 
 /* Word List & Scoreboard */
+
 #list {
     margin-left: 72px;
     margin-top: -10px;
-    font-family: 'Amatic SC';
     font-size: 30px;
     width: 100px;
     height: 220px;
@@ -107,12 +110,12 @@ body > div.buttons {
 
 .wordlist {
     color: #000;
-    font-family: 'Amatic SC';
+    
 }
 
 .score {
     color: #000;
-    font-family: 'Amatic SC';
+    
 }
 
 #container-fluid > h2.wordlist {
@@ -132,9 +135,9 @@ body > div.buttons {
     float: right;
     margin-right: 137px;
     margin-top: -230px;
-    font-family: 'Amatic SC';
     font-size: 40px;
     font-weight: 700;
+    
 }
 
 
@@ -144,27 +147,36 @@ body > div.buttons {
     #secondary { width:30%; margin-left:3%;}  
 }
 
-/* Tabled Portrait */
+/* Tablet Portrait */
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
 
-body > h1 {
+/* Titles */
+
+.title {
+    margin-top: 165px;
+    margin-left: 50px;
+}
+
+
+.word-title {
     text-align: center;
     border: 0;
     padding-bottom: 10px;
     color: #000;
     margin-left: 430px;
-    font-family: 'Amatic SC',monospace;
-    font-size: 100px;
+   
+    font-size: 4.2em;
     display: inline;
     margin-top: -105px;
 }
 
-body > h4 {
+.word-title-2 {
     text-align: center;
-    font-family: 'Amatic SC';
-    font-size: 30px;
-    margin-top: 60px;
+   
+    font-size: 2em;
+    margin-top: 25px;
+    margin-left: -50px;
 }
